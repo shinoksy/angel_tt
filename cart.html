@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Font Awesome -->
+
+
+    <!-- Add on or Overwrite CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html"><img src="img/logo-name.png" width="100px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Product Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Modeling Tools</a>
+              <a class="dropdown-item" href="#">Star Wars Model Kits</a>
+              <a class="dropdown-item" href="#">Others Series Kits</a>
+              <a class="dropdown-item" href="#">Car Model Kits</a>
+            </div>
+          </li><!-- Nav Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Gundam Grade
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">PG</a>
+              <a class="dropdown-item" href="#">MG</a>
+              <a class="dropdown-item" href="#">RG</a>
+              <a class="dropdown-item" href="#">HG</a>
+              <a class="dropdown-item" href="#">SD</a>
+            </div>
+          </li><!-- Nav Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Gundam Series
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Iron-Blooded Orphans</a>
+              <a class="dropdown-item" href="#">MS Gundam Unicorn</a>
+              <a class="dropdown-item" href="#">Gundam Build Divers</a>
+              <a class="dropdown-item" href="#">MS Gundam SEED Destiny</a>
+              <a class="dropdown-item" href="#">MS Gundam 00</a>
+            </div>
+          </li><!-- Nav Dropdown --> 
+          <li class="nav-item">
+            <a class="nav-link" href="news_details.html">News & Event</a>
+          </li>        
+        </form>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenu2">
+              <form class="px-4 py-3">
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="sign_up.html">New around here? Sign up</a>
+              <a class="dropdown-item" href="#">Forgot password?</a>
+            </div>
+          </div>
+          <li class="nav-item px-2 py-2">
+            <a href="cart.html"><i class="fas fa-shopping-cart" style="color:white; font-size: 1.3rem;"></i></a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a href=""><i class="fas fa-search" style="color:white; font-size: 1.3rem;"></i></a>  
+          </li>          
+        </ul>
+      </div>
+    </nav>
+    <!-- NavBar End -->
+
+
+    <section class="container">
+      <div class="row">
+        <table id="cart" class="table table-hover table-condensed">
+          <thead>
+            <tr>
+              <th style="width:50%">Product</th>
+              <th style="width:10%">Price</th>
+              <th style="width:8%">Quantity</th>
+              <th style="width:22%" class="text-center">Subtotal</th>
+              <th style="width:10%"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-th="Product">
+                <div class="row">
+                  <div class="col-3"><img src="http://placehold.it/100x100" alt="..." class="img-responsive" /></div>
+                  <div class="col-9">
+                    <h4 class="nomargin">Product 1</h4>
+                    <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </td>
+              <td data-th="Price">RM 199.99</td>
+              <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1">
+              </td>
+              <td data-th="Subtotal" class="text-center">RM 199.99</td>
+              <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fas fa-sync-alt"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="visible-xs">
+              <td class="text-center"><strong>Total 199.99</strong></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+              <td colspan="2" class="hidden-xs"></td>
+              <td class="hidden-xs text-center"><strong>Total RM 199.99</strong></td>
+              <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+
+    <footer class="mt-5 mb-3 footer bg-dark">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <h4 class="mb-4 text-white">
+              Links
+            </h4>
+            <p class="">
+              <a class="text-secondary" href="#" style="text-decoration:none;">About Us</a>
+              <br>
+              <a class="text-secondary" href="shipping.html" style="text-decoration:none;">Shipping Details</a>
+            </p>
+          </div><!-- Col-3 END -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <h4 class="mb-4 text-white">Address</h4>
+            <p class="text-secondary">
+               59, Jalan Prima SG 3/1, Prima Seri Gombak, 68100 Batu Caves, Selangor.
+            </p>
+            <p class="text-secondary">
+              Hours: 12pm - 9pm
+            </p>
+            <p class="text-secondary">
+              Phone: 016-972 6983
+            </p>
+          </div><!-- Col-3 END -->
+          <div class="col-lg-6 col-md-4 col-sm-12">
+            <div style="width: 100%"><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=59%2C%20Jalan%20Prima%20SG%203%2F1%2C%20Prima%20Seri%20Gombak%2C%2068100%20Batu%20Caves%2C%20Selangor+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create route map</a></iframe></div><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <hr style="border-color: #6c757d; ">
+        <div class="row">
+          <div class="col-6">
+            <p class="text-secondary pb-3">
+              &copy 2019 Angel Trend Trading - All Rights Reserved
+            </p>
+          </div><!-- col-6 END -->
+          <div class="col-6" style="text-align: right;">
+            <a href="#" class="text-secondary mx-1">
+              <span style="font-size: 25px;"><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="text-secondary mx-1">
+              <span style="font-size: 25px;"><i class="fab fa-youtube"></i></span>
+            </a>
+            <a href="#" class="text-secondary mx-1">
+              <span style="font-size: 25px;"><i class="fab fa-instagram"></i></span>
+            </a>
+          </div><!-- col-6 END -->
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
